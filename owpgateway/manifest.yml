@@ -1,0 +1,8 @@
+---
+applications:
+- name: owpgateway
+  memory: 512MB
+  host: owpgateway-test-services
+  path: target/owpgateway-1.0.jar
+  services:
+  - owpeurekaservice

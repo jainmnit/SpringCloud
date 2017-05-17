@@ -1,0 +1,8 @@
+---
+applications:
+- name: owphystrix
+  memory: 512MB
+  host: owphystrix-test-services
+  path: target/owphystrix-1.0.jar
+  services:
+  - owpeurekaservice

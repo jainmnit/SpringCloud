@@ -1,0 +1,106 @@
+	<?xml version="1.0" encoding="UTF-8"?>
+	<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		<modelVersion>4.0.0</modelVersion>
+	
+		<artifactId>starplatform</artifactId>
+		<packaging>jar</packaging>
+	
+		<name>starplatform</name>
+		<description>Demo project for Spring Boot</description>
+	
+		<parent>
+			<groupId>com.mbusa.eai</groupId>
+			<artifactId>OWP-SCSP</artifactId>
+			<version>1.0</version>
+		</parent>
+	
+		<properties>
+			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+			<java.version>1.8</java.version>
+			<!-- <main.basedir>${basedir}/../..</main.basedir> <m2eclipse.wtp.contextRoot>/</m2eclipse.wtp.contextRoot> -->
+		</properties>
+	
+		<dependencies>
+			<!-- https://mvnrepository.com/artifact/com.netflix.hystrix/hystrix-javanica -->
+			<dependency>
+				<groupId>com.netflix.hystrix</groupId>
+				<artifactId>hystrix-javanica</artifactId>
+				<version>1.4.0-RC1</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/xpp3/xpp3 -->
+			<dependency>
+			    <groupId>xpp3</groupId>
+			    <artifactId>xpp3</artifactId>
+			    <version>1.1.4c</version>
+			</dependency>	
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>jstl</artifactId>
+			</dependency>	
+			<dependency>
+				<groupId>org.apache.tomcat.embed</groupId>
+				<artifactId>tomcat-embed-jasper</artifactId>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpclient</artifactId>
+				<version>4.5.2</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>2.6.1</version>
+			</dependency> 
+			<dependency>
+			    <groupId>io.springfox</groupId>
+			    <artifactId>springfox-swagger-ui</artifactId>
+			    <version>2.6.1</version>
+			</dependency>
+			<!-- Testing -->
+			  <dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-test</artifactId>
+				<scope>test</scope>
+			</dependency> 
+			<!--  Gemfire -->
+			<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-gemfire -->
+			<dependency>
+			    <groupId>org.springframework.boot</groupId>
+			    <artifactId>spring-boot-starter-data-gemfire</artifactId>
+			    <version>1.5.3.RELEASE</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.springframework.shell/spring-shell -->
+			<dependency>
+			    <groupId>org.springframework.shell</groupId>
+			    <artifactId>spring-shell</artifactId>
+			    <version>1.0.0.RELEASE</version>
+			    <scope>runtime</scope>
+			</dependency>
+			
+		
+			
+		</dependencies> 
+			
+		<!-- Package as an executable jar -->
+		<build>
+			<plugins>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+				</plugin>
+			</plugins>
+		</build>
+		    <repositories>
+        <repository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </repository>
+    </repositories>
+	
+	</project>

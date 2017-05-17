@@ -1,0 +1,8 @@
+---
+applications:
+- name: starplatform
+  memory: 512MB
+  host: starplatform-test-services
+  path: target/starplatform-1.0.jar
+  services:
+  - owpeurekaservice

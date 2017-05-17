@@ -1,0 +1,6 @@
+---
+applications:
+- name: owpeureka
+  memory: 512MB
+  host: owpeureka-service
+  path: target/owpeureka-1.0.jar
